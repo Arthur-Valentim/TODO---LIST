@@ -1,0 +1,4 @@
+flask
+gunicorn
+mkdocs
+mkdocs-material
