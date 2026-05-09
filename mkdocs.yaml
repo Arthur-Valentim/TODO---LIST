@@ -1,0 +1,6 @@
+site_name: Todo List MVC - Documentação
+theme: material
+
+nav:
+  - Início: index.md
+  - Constituição: constitution.md
