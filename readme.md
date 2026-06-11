@@ -4,7 +4,7 @@ Este é um projeto acadêmico completo que implementa um gerenciador de tarefas 
 
 ## Links do Projeto em Produção
 
-* **API Online (Render):** [https://todo-list-s68y.onrender.com/tarefas](https://todo-list-s68y.onrender.com/tarefas)
+* **Aplicação Web (Render):** [https://todo-list-s68y.onrender.com](https://todo-list-s68y.onrender.com)
 * **Documentação (GitHub Pages):** [https://arthur-valentim.github.io/TODO---LIST/](https://arthur-valentim.github.io/TODO---LIST/)
 
 ---
@@ -16,7 +16,7 @@ A aplicação é dividida em três camadas principais para garantir a separaçã
 1.  **Model (`app/modelo.py`):** Contém a lógica de negócio e o gerenciamento dos dados. É aqui que as tarefas são criadas, listadas e removidas.
 2.  **View (Interface):**
     * **Terminal:** Apresentação de menus e tabelas no console.
-    * **Web (JSON):** Representação dos dados formatada para consumo via API.
+    * **Web (HTML/API):** Interface gráfica responsiva e API JSON integradas.
 3.  **Controller (`app_web.py` / `main.py`):** Atua como o intermediário. Recebe as entradas do usuário (seja via teclado ou via requisição HTTP) e aciona o Model.
 
 ---
@@ -37,3 +37,19 @@ cd TODO---LIST
 
 # Instale as bibliotecas (Flask e Gunicorn)
 pip install -r requirements.txt
+```
+
+### 3. Execução Local
+
+Você pode rodar a aplicação de duas formas:
+
+**Modo Web (Interface Gráfica no Navegador):**
+```bash
+python app_web.py
+```
+Após rodar, acesse `http://localhost:5000` no seu navegador.
+
+**Modo Terminal (Interface CLI):**
+```bash
+python main.py
+```

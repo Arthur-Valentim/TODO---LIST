@@ -8,5 +8,11 @@ Bem-vindo à documentação oficial do projeto Todo List. Esta aplicação foi d
 *   **Lembretes**: Suporte para anotações de tempo ou observações importantes.
 
 ## Como Executar
-Para rodar o projeto localmente, utilize o comando na raiz:
-`py main.py`
+Para rodar o projeto localmente, você pode escolher entre dois modos:
+
+**Modo Web (com interface gráfica):**
+`python app_web.py`
+Acesse `http://localhost:5000` no seu navegador.
+
+**Modo Terminal (CLI):**
+`python main.py`
