@@ -1,11 +1,15 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="pt" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentação do projeto Todo List MVC construído sob Spec-Driven Development.">
+      
+      
+        <meta name="author" content="Arthur Valentim">
       
       
       
@@ -21,11 +25,14 @@
     
     
       
-        <title>Todo List MVC - Documentação</title>
+        <title>Todo List MVC</title>
       
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +60,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -63,7 +77,7 @@
       
         
         <a href="#projeto-todo-list-mvc" class="md-skip">
-          Skip to content
+          Pular para conteúdo
         </a>
       
     </div>
@@ -77,8 +91,8 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Todo List MVC - Documentação" class="md-header__button md-logo" aria-label="Todo List MVC - Documentação" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="." title="Todo List MVC" class="md-header__button md-logo" aria-label="Todo List MVC" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,18 +106,44 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Todo List MVC - Documentação
+            Todo List MVC
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Início
+              🏠 Início
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Mudar para Modo Escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para Modo Escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Mudar para Modo Claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para Modo Claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -120,16 +160,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Pesquisar">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -140,7 +180,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Inicializando busca
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -150,6 +190,18 @@
 </div>
       
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Arthur-Valentim/TODO---LIST" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Arthur-Valentim/TODO---LIST
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -174,16 +226,28 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Todo List MVC - Documentação" class="md-nav__button md-logo" aria-label="Todo List MVC - Documentação" data-md-component="logo">
+    <a href="." title="Todo List MVC" class="md-nav__button md-logo" aria-label="Todo List MVC" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Todo List MVC - Documentação
+    Todo List MVC
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Arthur-Valentim/TODO---LIST" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Arthur-Valentim/TODO---LIST
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -210,7 +274,7 @@
   <span class="md-ellipsis">
     
   
-    Início
+    🏠 Início
   
 
     
@@ -228,7 +292,7 @@
   <span class="md-ellipsis">
     
   
-    Início
+    🏠 Início
   
 
     
@@ -240,7 +304,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
   
   
   
@@ -249,7 +313,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Índice
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -257,7 +321,7 @@
   <a href="#funcionalidades-principais" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Funcionalidades Principais
+        ✨ Funcionalidades Principais
       
     </span>
   </a>
@@ -265,10 +329,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-executar" class="md-nav__link">
+  <a href="#navegando-pelo-spec-kit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Como Executar
+        🛠️ Navegando pelo Spec-Kit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execucao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Execução Local
       
     </span>
   </a>
@@ -297,7 +372,88 @@
   <span class="md-ellipsis">
     
   
-    Constituição
+    🏛️ Constituição (Constitution)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="spec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📖 Especificação (Spec)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🗺️ Plano Técnico (Plan)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✅ Tarefas (Tasks)
   
 
     
@@ -323,7 +479,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
   
   
   
@@ -332,7 +488,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Índice
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -340,7 +496,7 @@
   <a href="#funcionalidades-principais" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Funcionalidades Principais
+        ✨ Funcionalidades Principais
       
     </span>
   </a>
@@ -348,10 +504,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-executar" class="md-nav__link">
+  <a href="#navegando-pelo-spec-kit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Como Executar
+        🛠️ Navegando pelo Spec-Kit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execucao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Execução Local
       
     </span>
   </a>
@@ -374,18 +541,38 @@
                   
 
 
+  
+  
 
-<h1 id="projeto-todo-list-mvc">Projeto Todo List MVC</h1>
-<p>Bem-vindo à documentação oficial do projeto Todo List. Esta aplicação foi desenvolvida em <strong>Python</strong> utilizando o padrão de arquitetura <strong>MVC (Model-View-Controller)</strong> e uma estrutura de <strong>Monorepo</strong>.</p>
-<h2 id="funcionalidades-principais">Funcionalidades Principais</h2>
+
+<h1 id="projeto-todo-list-mvc">🚀 Projeto Todo List MVC</h1>
+<p>Bem-vindo à documentação oficial do projeto <strong>Todo List</strong>, desenvolvida com <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+<p>Esta aplicação foi rigorosamente arquitetada em <strong>Python</strong>, utilizando o padrão de design estrutural <strong>MVC (Model-View-Controller)</strong> e construída seguindo a metodologia <strong>Spec-Driven Development (Spec-Kit)</strong>, adotando uma estrutura de <strong>Monorepo</strong>.</p>
+<hr />
+<h2 id="funcionalidades-principais">✨ Funcionalidades Principais</h2>
 <ul>
-<li><strong>Cadastrar Tarefas</strong>: Permite adicionar novas atividades com lembretes.</li>
-<li><strong>Remover Tarefas</strong>: Exclusão de itens via identificador único.</li>
-<li><strong>Lembretes</strong>: Suporte para anotações de tempo ou observações importantes.</li>
+<li>📝 <strong>Cadastrar Tarefas</strong>: Permite adicionar novas atividades vinculadas a descrições claras e lembretes precisos (data e hora).</li>
+<li>🗑️ <strong>Remover Tarefas</strong>: Exclusão ágil de itens através da interface web com feedback imediato via API.</li>
+<li>⏰ <strong>Lembretes Dinâmicos</strong>: Suporte integrado para anotações de tempo, ajudando o usuário a não perder prazos.</li>
+<li>🌐 <strong>Interface Web Responsiva</strong>: Layout moderno, focado na melhor experiência de uso tanto no desktop quanto em dispositivos móveis.</li>
 </ul>
-<h2 id="como-executar">Como Executar</h2>
-<p>Para rodar o projeto localmente, utilize o comando na raiz:
-<code>py main.py</code></p>
+<hr />
+<h2 id="navegando-pelo-spec-kit">🛠️ Navegando pelo Spec-Kit</h2>
+<p>Esta documentação foi elaborada para servir como o coração do projeto. Você pode acompanhar todas as fases de construção do software utilizando o menu lateral esquerdo:</p>
+<ol>
+<li><strong><a href="constitution/">Constituição</a>:</strong> As regras inegociáveis do projeto (Por que MVC? Por que em memória?).</li>
+<li><strong><a href="spec/">Especificação (Spec)</a>:</strong> As histórias do usuário e requisitos.</li>
+<li><strong><a href="plan/">Plano Técnico (Plan)</a>:</strong> A decisão arquitetural dos componentes.</li>
+<li><strong><a href="tasks/">Tarefas (Tasks)</a>:</strong> O checklist final validando a execução.</li>
+</ol>
+<hr />
+<h2 id="execucao-local">💻 Execução Local</h2>
+<p>Para testar ou desenvolver o projeto em sua máquina, utilize o ponto de entrada principal, que inicializará o servidor web Flask.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>main.py
+</span></code></pre></div>
+<blockquote>
+<p><strong>Dica:</strong> O servidor estará disponível em <code>http://localhost:5000</code>.</p>
+</blockquote>
 
 
 
@@ -435,7 +622,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
