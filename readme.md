@@ -23,7 +23,7 @@ Seguindo a metodologia do **Spec-Driven Development**, todas as etapas arquitetu
 ### 1. 📜 Constituição (Regras Inegociáveis)
 - **MVC Estrito:** Separação absoluta entre Interface (HTML/CSS), Rotas/Controle (Flask) e Dados (Memória).
 - **Abordagem Stateless (Em Memória):** Por requisito acadêmico, o uso de banco de dados persistente foi vetado para este escopo. As tarefas vivem no tempo de vida da instância do servidor.
-- **Monorepo:** Código e documentação (`docs/`) respiram no mesmo ambiente.
+- **Monorepo:** Código e documentação (`specs/`) respiram no mesmo ambiente.
 
 ### 2. 📝 Especificação (Spec)
 **Propósito:** Um organizador de tarefas rápido e acessível via navegador.
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 Inicie o servidor Flask diretamente da raiz:
 ```bash
-python main.py
+python app_web.py
 ```
 > Acesse **[http://localhost:5000](http://localhost:5000)** no seu navegador para interagir com a aplicação.
 

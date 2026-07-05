@@ -1,7 +1,7 @@
 # main.py
 from flask import Flask, request, jsonify, render_template_string
-from app.modelo import ModeloTarefa
-from app.visao import HTML_TEMPLATE
+from src.model.modelo import ModeloTarefa
+from src.view.visao import HTML_TEMPLATE
 
 app = Flask(__name__)
 modelo = ModeloTarefa()

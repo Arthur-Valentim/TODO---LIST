@@ -4,6 +4,7 @@ site_author: Arthur Valentim
 
 repo_name: Arthur-Valentim/TODO---LIST
 repo_url: https://github.com/Arthur-Valentim/TODO---LIST
+docs_dir: specs
 
 theme:
   name: material
