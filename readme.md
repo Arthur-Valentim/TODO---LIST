@@ -16,6 +16,26 @@ O projeto foi construído utilizando um repositório único (**Monorepo**) e doc
 
 ---
 
+## 📁 Arquitetura do Projeto
+
+A aplicação está organizada seguindo rigorosamente o padrão **MVC (Model-View-Controller)** com seus módulos encapsulados no diretório `src/`:
+
+```text
+TODO - LIST/
+├── src/
+│   ├── model/
+│   │   └── modelo.py       # Dados (CRUD em RAM)
+│   ├── view/
+│   │   └── visao.py        # Template HTML, CSS puro e JavaScript (Vanilla)
+│   └── controller/
+│       └── main.py         # Rotas REST e controle com Flask
+├── specs/                  # Documentação do Spec-Kit (MkDocs)
+├── app_web.py              # Entry-point WSGI para deploy
+└── readme.md               # Este arquivo
+```
+
+---
+
 ## 🛠️ Spec-Kit (Desenvolvimento Orientado a Especificação)
 
 Seguindo a metodologia do **Spec-Driven Development**, todas as etapas arquiteturais foram documentadas e podem ser conferidas em detalhes na [Documentação MkDocs](https://arthur-valentim.github.io/TODO---LIST/). Aqui está o resumo de como o software foi planejado e executado:
@@ -33,9 +53,9 @@ Seguindo a metodologia do **Spec-Driven Development**, todas as etapas arquitetu
   - Excluir rapidamente as atividades já concluídas.
 
 ### 3. 🏗️ Plano Técnico (Plan)
-* **Model (`app/modelo.py`):** Dicionários em Python encarregados do CRUD em tempo de execução.
-* **View (`app/visao.py`):** Template dinâmico injetado com Javascript (Vanilla) moderno, trazendo uma interface responsiva baseada em CSS Grid/Flexbox sem dependências pesadas.
-* **Controller (`main.py`):** Microframework **Flask** atuando como maestro. Ele provê as rotas de API Restful e entrega a View ao cliente.
+* **Model (`src/model/modelo.py`):** Dicionários em Python encarregados do CRUD em tempo de execução.
+* **View (`src/view/visao.py`):** Template dinâmico injetado com Javascript (Vanilla) moderno, trazendo uma interface responsiva baseada em CSS Grid/Flexbox sem dependências pesadas.
+* **Controller (`src/controller/main.py`):** Microframework **Flask** atuando como maestro. Ele provê as rotas de API Restful e entrega a View ao cliente.
 
 ### 4. ✅ Tarefas Executadas (Tasks)
 - [x] Configurar ambiente inicial e repositório (Monorepo).
