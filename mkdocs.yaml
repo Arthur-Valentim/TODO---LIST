@@ -1,6 +1,45 @@
-site_name: Todo List MVC - Documentação
-theme: material
+site_name: Todo List MVC
+site_description: Documentação do projeto Todo List MVC construído sob Spec-Driven Development.
+site_author: Arthur Valentim
+
+repo_name: Arthur-Valentim/TODO---LIST
+repo_url: https://github.com/Arthur-Valentim/TODO---LIST
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Mudar para Modo Escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para Modo Claro
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
-  - Início: index.md
-  - Constituição: constitution.md
+  - 🏠 Início: index.md
+  - 🏛️ Constituição (Constitution): constitution.md
+  - 📖 Especificação (Spec): spec.md
+  - 🗺️ Plano Técnico (Plan): plan.md
+  - ✅ Tarefas (Tasks): tasks.md

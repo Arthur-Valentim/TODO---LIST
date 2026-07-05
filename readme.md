@@ -1,55 +1,83 @@
-## Gerenciador de Tarefas (Todo List) - Arquitetura MVC
-
-Este é um projeto acadêmico completo que implementa um gerenciador de tarefas utilizando **Python** e o padrão arquitetural **MVC (Model-View-Controller)**. O projeto foi desenvolvido sob a metodologia de **Spec-Driven Development**, unindo código-fonte e documentação técnica em um monorepo profissional.
-
-## Links do Projeto em Produção
-
-* **Aplicação Web (Render):** [https://todo-list-s68y.onrender.com](https://todo-list-s68y.onrender.com)
-* **Documentação (GitHub Pages):** [https://arthur-valentim.github.io/TODO---LIST/](https://arthur-valentim.github.io/TODO---LIST/)
-
----
-
-## Arquitetura do Sistema (MVC)
-
-A aplicação é dividida em três camadas principais para garantir a separação de responsabilidades:
-
-1.  **Model (`app/modelo.py`):** Contém a lógica de negócio e o gerenciamento dos dados. É aqui que as tarefas são criadas, listadas e removidas.
-2.  **View (Interface):**
-    * **Terminal:** Apresentação de menus e tabelas no console.
-    * **Web (HTML/API):** Interface gráfica responsiva e API JSON integradas.
-3.  **Controller (`app_web.py` / `main.py`):** Atua como o intermediário. Recebe as entradas do usuário (seja via teclado ou via requisição HTTP) e aciona o Model.
+<div align="center">
+  <h1>✅ Gerenciador de Tarefas (Todo List)</h1>
+  <p><i>Projeto acadêmico completo em Python focado no padrão <b>MVC</b> e <b>Spec-Driven Development</b>.</i></p>
+  
+  <a href="https://todo-list-s68y.onrender.com">🖥️ Aplicação Web (Render)</a> •
+  <a href="https://arthur-valentim.github.io/TODO---LIST/">📚 Documentação (MkDocs)</a>
+</div>
 
 ---
 
-## Como Rodar o Programa
+## 🎯 Sobre o Projeto
+
+Este repositório contém uma aplicação web interativa de lista de tarefas (TODO List). O objetivo principal não é apenas a ferramenta em si, mas a rigorosa aplicação de padrões de engenharia de software e metodologias modernas.
+
+O projeto foi construído utilizando um repositório único (**Monorepo**) e documentado usando o processo do **Spec-Kit**, garantindo que as especificações não fiquem apenas no papel, mas conduzam o desenvolvimento do início ao fim.
+
+---
+
+## 🛠️ Spec-Kit (Desenvolvimento Orientado a Especificação)
+
+Seguindo a metodologia do **Spec-Driven Development**, todas as etapas arquiteturais foram documentadas e podem ser conferidas em detalhes na [Documentação MkDocs](https://arthur-valentim.github.io/TODO---LIST/). Aqui está o resumo de como o software foi planejado e executado:
+
+### 1. 📜 Constituição (Regras Inegociáveis)
+- **MVC Estrito:** Separação absoluta entre Interface (HTML/CSS), Rotas/Controle (Flask) e Dados (Memória).
+- **Abordagem Stateless (Em Memória):** Por requisito acadêmico, o uso de banco de dados persistente foi vetado para este escopo. As tarefas vivem no tempo de vida da instância do servidor.
+- **Monorepo:** Código e documentação (`docs/`) respiram no mesmo ambiente.
+
+### 2. 📝 Especificação (Spec)
+**Propósito:** Um organizador de tarefas rápido e acessível via navegador.
+* **Histórias de Usuário Atendidas:**
+  - Cadastrar nova tarefa com descrição e data/hora (lembrete).
+  - Visualizar todas as tarefas pendentes de forma limpa.
+  - Excluir rapidamente as atividades já concluídas.
+
+### 3. 🏗️ Plano Técnico (Plan)
+* **Model (`app/modelo.py`):** Dicionários em Python encarregados do CRUD em tempo de execução.
+* **View (`app/visao.py`):** Template dinâmico injetado com Javascript (Vanilla) moderno, trazendo uma interface responsiva baseada em CSS Grid/Flexbox sem dependências pesadas.
+* **Controller (`main.py`):** Microframework **Flask** atuando como maestro. Ele provê as rotas de API Restful e entrega a View ao cliente.
+
+### 4. ✅ Tarefas Executadas (Tasks)
+- [x] Configurar ambiente inicial e repositório (Monorepo).
+- [x] Desenvolver a camada de Modelo (Model) para armazenamento em memória.
+- [x] Desenvolver o template frontend responsivo (View).
+- [x] Desenvolver a camada Controladora usando Flask e as rotas de API.
+- [x] Produzir toda a documentação das etapas (Spec-Kit) via MkDocs.
+- [x] Finalizar o `requirements.txt` e efetuar o deploy automático no Render.
+
+---
+
+## 🚀 Como Executar Localmente
 
 ### 1. Pré-requisitos
-Certifique-se de ter o Python 3 instalado em sua máquina.
+Certifique-se de possuir o **Python 3+** instalado.
 
-### 2. Instalação
-Clone o repositório e instale as dependências necessárias:
+### 2. Passos para Inicialização
+
+Clone o projeto e instale as dependências contidas no `requirements.txt`:
 ```bash
-# Clone o repositório
-git clone [https://github.com/Arthur-Valentim/TODO---LIST.git](https://github.com/Arthur-Valentim/TODO---LIST.git)
+# 1. Clone este repositório
+git clone https://github.com/Arthur-Valentim/TODO---LIST.git
 
-# Entre na pasta
+# 2. Acesse a pasta
 cd TODO---LIST
 
-# Instale as bibliotecas (Flask e Gunicorn)
+# 3. Instale os requerimentos (Flask, MkDocs, etc)
 pip install -r requirements.txt
 ```
 
-### 3. Execução Local
+### 3. Subindo o Servidor
 
-Você pode rodar a aplicação de duas formas:
-
-**Modo Web (Interface Gráfica no Navegador):**
-```bash
-python app_web.py
-```
-Após rodar, acesse `http://localhost:5000` no seu navegador.
-
-**Modo Terminal (Interface CLI):**
+Inicie o servidor Flask diretamente da raiz:
 ```bash
 python main.py
 ```
+> Acesse **[http://localhost:5000](http://localhost:5000)** no seu navegador para interagir com a aplicação.
+
+### 4. Como ler a Documentação (Local)
+
+Para subir o servidor de documentação localmente e acompanhar os textos do Spec-Kit:
+```bash
+python -m mkdocs serve
+```
+> Acesse **[http://127.0.0.1:8000](http://127.0.0.1:8000)**.

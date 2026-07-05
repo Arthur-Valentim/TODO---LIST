@@ -1,12 +1,27 @@
-# Constituição do Projeto
+# 🏛️ Constituição do Projeto
 
-Este documento apresenta as justificativas técnicas para as decisões arquiteturais tomadas no desenvolvimento desta Todo List.
+A Constituição serve como a "lei inegociável" do projeto. Este documento define as justificativas técnicas rigorosas e as decisões arquiteturais definitivas que balizam o desenvolvimento desta Todo List, seguindo a metodologia de **Spec-Driven Development**.
 
-## Justificativa do MVC
-A escolha pelo padrão **MVC** foi feita para garantir a separação de responsabilidades. O **Modelo** gerencia os dados em memória, a **Visão** trata exclusivamente da interface com o usuário no terminal, e o **Controlador** coordena o fluxo entre ambos. Isso facilita a manutenção e futuras expansões, como a troca da interface de terminal por uma interface Web sem alterar a lógica de dados.
+---
 
-## Escolha de Armazenamento
-Utilizamos armazenamento **em memória** (dicionários Python) para atender aos requisitos de simplicidade da especificação, eliminando a necessidade de configuração de um banco de dados persistente nesta fase acadêmica.
+## 1. Padrão Arquitetural: MVC
+A escolha pelo padrão **MVC (Model-View-Controller)** foi adotada para garantir a total separação de responsabilidades no software:
+- **Model:** Isolamento da lógica de dados. O modelo nunca deve saber como a interface web funciona.
+- **View:** Isolamento da apresentação visual. Deve consumir apenas dados processados, sem implementar regras de negócio.
+- **Controller:** O maestro. Garante a ponte segura entre o Model e a View.
 
-## Estrutura de Monorepo
-O uso de um **Monorepo** permite que o código-fonte da aplicação e a documentação MkDocs coexistam no mesmo repositório, facilitando o versionamento e a sincronização entre a implementação e os manuais.
+**Justificativa:** Facilita a manutenção em longo prazo, promove a testabilidade isolada e permite futuras expansões (ex: trocar a interface HTML por React ou aplicativo mobile) sem necessidade de refatorar a base de dados ou regras de negócio.
+
+---
+
+## 2. Estratégia de Armazenamento
+Utilizamos armazenamento estrito **em memória** por meio de estruturas nativas (dicionários em Python).
+
+**Justificativa:** O foco desta etapa acadêmica é a estruturação arquitetural da comunicação entre camadas e a automação do fluxo com o Spec-Kit. O armazenamento em memória atende aos requisitos de simplicidade sem a sobrecarga de configurar, hospedar e orquestrar bancos de dados persistentes.
+
+---
+
+## 3. Gestão de Código: Monorepo
+Tanto o código-fonte (backend web e frontend) quanto a documentação (MkDocs e etapas do Spec-Kit) habitam o mesmo repositório no GitHub.
+
+**Justificativa:** O **Monorepo** garante que a documentação técnica evolua na mesma velocidade da implementação de código. Reduz a defasagem entre o que está implementado e o que está documentado, mantendo tudo centralizado e fácil de avaliar.
