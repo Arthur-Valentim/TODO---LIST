@@ -93,11 +93,3 @@ Inicie o servidor Flask diretamente da raiz:
 python app_web.py
 ```
 > Acesse **[http://localhost:5000](http://localhost:5000)** no seu navegador para interagir com a aplicação.
-
-### 4. Como ler a Documentação (Local)
-
-Para subir o servidor de documentação localmente e acompanhar os textos do Spec-Kit:
-```bash
-python -m mkdocs serve
-```
-> Acesse **[http://127.0.0.1:8000](http://127.0.0.1:8000)**.
