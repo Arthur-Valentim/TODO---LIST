@@ -41,6 +41,6 @@ markdown_extensions:
 nav:
   - 🏠 Início: index.md
   - 🏛️ Constituição (Constitution): constitution.md
-  - 📖 Especificação (Spec): spec.md
-  - 🗺️ Plano Técnico (Plan): plan.md
-  - ✅ Tarefas (Tasks): tasks.md
+  - 📖 Especificação (Spec): 001-todo-mvc/spec.md
+  - 🗺️ Plano Técnico (Plan): 001-todo-mvc/plan.md
+  - ✅ Tarefas (Tasks): 001-todo-mvc/tasks.md

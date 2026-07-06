@@ -22,6 +22,7 @@ A aplicação está organizada seguindo rigorosamente o padrão **MVC (Model-Vie
 
 ```text
 TODO - LIST/
+├── .specify/               # Infraestrutura e Memória do Agente IA (GitHub Spec Kit)
 ├── src/
 │   ├── model/
 │   │   └── modelo.py       # Dados (CRUD em RAM)
@@ -30,6 +31,8 @@ TODO - LIST/
 │   └── controller/
 │       └── main.py         # Rotas REST e controle com Flask
 ├── specs/                  # Documentação do Spec-Kit (MkDocs)
+│   ├── 001-todo-mvc/       # Especificações isoladas por feature
+│   └── constitution.md     # Regras globais do projeto
 ├── app_web.py              # Entry-point WSGI para deploy
 └── readme.md               # Este arquivo
 ```
@@ -64,6 +67,8 @@ Seguindo a metodologia do **Spec-Driven Development**, todas as etapas arquitetu
 - [x] Desenvolver a camada Controladora usando Flask e as rotas de API.
 - [x] Produzir toda a documentação das etapas (Spec-Kit) via MkDocs.
 - [x] Finalizar o `requirements.txt` e efetuar o deploy automático no Render.
+- [x] Integrar a CLI oficial do **GitHub Spec Kit** (`specify-cli`), adicionando a infraestrutura `.specify/` e a Constituição na memória do agente.
+- [x] Reorganizar a estrutura de diretórios em `specs/` isolando arquivos por feature (`001-todo-mvc/`), seguindo as convenções oficiais.
 
 ---
 

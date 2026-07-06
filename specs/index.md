@@ -20,9 +20,9 @@ Esta aplicação foi rigorosamente arquitetada em **Python**, utilizando o padr�
 Esta documentação foi elaborada para servir como o coração do projeto. Você pode acompanhar todas as fases de construção do software utilizando o menu lateral esquerdo:
 
 1.  **[Constituição](constitution.md):** As regras inegociáveis do projeto (Por que MVC? Por que em memória?).
-2.  **[Especificação (Spec)](spec.md):** As histórias do usuário e requisitos.
-3.  **[Plano Técnico (Plan)](plan.md):** A decisão arquitetural dos componentes.
-4.  **[Tarefas (Tasks)](tasks.md):** O checklist final validando a execução.
+2.  **[Especificação (Spec)](001-todo-mvc/spec.md):** As histórias do usuário e requisitos.
+3.  **[Plano Técnico (Plan)](001-todo-mvc/plan.md):** A decisão arquitetural dos componentes.
+4.  **[Tarefas (Tasks)](001-todo-mvc/tasks.md):** O checklist final validando a execução.
 
 ---
 
